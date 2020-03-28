@@ -5,23 +5,30 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Mohammed Al Shoghri</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        table, th, td {
+        padding: 10px;
+        border: 1px solid black; 
+        border-collapse: collapse;
+        }
+      </style>
     <script src='main.js'></script>
 </head>
 <body>
     <h1>Mohammed Al Shoghri</h1>
     <nav>
         <ul>
-            <li>Home</li>
-            <li>Blog</li>
-            <li>Services</li>
-            <li>Testimonies</li>
-            <li>Meet our Team</li>
-            <li>COntact Us</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#Blog">Blog</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Testimonies">Testimonies</a> </li>
+            <li><a href="#Meet our team">Meet our Team</a></li>
+            <li><a href="#Contact us">Contact Us</a></li>
         </ul>
     </nav>
     <section>
-        <h2>My Blog Posts</h2>
+        <h2 id="Blog">My Blog Posts</h2>
         <article>
             <h3>Ariticle with video link</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ipsam, sed consectetur <br/>laboriosam voluptatum minima atque eius expedita ullam voluptas perspiciatis.<br/> Earum fugit voluptas cupiditate nobis labore. Odit, saepe earum!</p>
@@ -50,10 +57,11 @@
     </section>
 
     <section>
-        <h2>Services</h2>
+        <h2 id="Services">Services</h2>
+
         <article>
             <h3>User Experience & Design</h3>
-            <p>Where creativity, aesthetics and the actual experience of it all meet to inspire loyalty among your customers and users on and across the digital landscape.</p>
+            <p>Where creativity, aesthetics and the actual experience of it all meet to inspire loyalty<br/> among your customers and users on and across the digital landscape.</p>
             <a href="https://www.appnovation.com/user-experience-and-design">Learn More</a>
         </article>
 
@@ -68,6 +76,77 @@
             <p>Creating an immersive  digital reality from inspired possibilities for brands,<br/> their customers and employees through the building, connecting and scaling of digital assets.</p>
             <a href="https://www.appnovation.com/development-engineering">TAL</a>
         </article>
+
+    </section>
+
+    <section>
+        <h2 id="Testimonies">Testimonies</h2>
+
+        <article>
+            <figure>
+                <img src="https://media2.fdncms.com/riverfronttimes/imager/u/original/2670446/johndoe.jpg" alt="John Doe’s picture"/>
+                <figcaption>John Doe’s picture</figcaption>
+            </figure>
+            
+        </article>
+
+        <article>
+            <h3>John Doe</h3>
+        </article>
+
+        <article>
+            <p>John Doe’s Testimony (ex: “Never worked with a professional before, but now I can proudly say I have!”)
+            </p>
+        </article>
+
+    </section>
+
+    <section>
+        <h2 id="Meet our team">Meet our team</h2>
+        <table>
+            <tr>
+                <td><strong>Name:</strong></td>
+                <td>Yaman</td>
+                <td>Emer</td>
+                <td>Lilas</td>
+            </tr>
+            <tr>
+                <td><strong>Job:</strong></td>
+                <td>University Student</td>
+                <td>freelance subtitle translator</td>
+                <td>University Student</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <h2 id="Contact us">Contact us</h2>
+        <form>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <input type="text" name="message" id="message">
+            </div>
+            <div>
+                <input type="radio" name="job or service">
+                <label for="You’re looking for a job">You’re looking for a job</label><br/>
+                <input type="radio" name="job or service">
+                <label for="You’re looking for a service">You’re looking for a service</label>
+            </div>
+        </form>
+        <div>
+            <ul >
+                <li><a href="http://www.facebook.com" class="fa fa-facebook"></a></li>
+                <li><a href="http://www.twitter.com" class="fa fa-twitter"></a></li>
+                <li><a href="http://www.instagram.com" class="fa fa-instagram"></a></li>
+            </ul>
+        </div>
     </section>
 </body>
 </html>
